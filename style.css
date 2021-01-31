@@ -146,13 +146,17 @@ position: absolute;
         display:none;
     }
     .banner-title{
-        margin: 80px 40px;
+        margin: 70px 30px;
     }
     .banner-title h1{
-        font-size: 50px;
+        font-size: 30px;
     }
     .noti {
         width: 100%;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        align-items: center;
     }
     .nav-bar{
         padding: 10px 30px;
