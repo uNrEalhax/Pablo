@@ -2,7 +2,7 @@
 <head> 
 <title> BURGERSHOT - REZERVÁCIA </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styleo.css">
+<link rel="stylesheet" href="stylerezervacia.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -34,7 +34,7 @@
             
  
     
-    <section class = "banner">
+    <section class = "banner" id="stred">
         <h2>REZERVUJ SA ZADARMO!</h2>
         <div class = "card-container">
             <div class = "card-img">
@@ -44,37 +44,79 @@
                 <h3>Rezervácia</h3>
                 <form>
                     <div class = "form-row">
-                        <select name = "days">
-                            <option value = "day-select">Deň</option>
-                            <option value = "sunday">Pondelok</option>
-                            <option value = "monday">Utorok</option>
-                            <option value = "tuesday">Streda</option>
-                            <option value = "wednesday">Štvrtok</option>
-                            <option value = "thursday">Piatok</option>
-                            <option value = "friday">Sobota</option>
-                            <option value = "saturday">Nedeľa</option>
+                        <select name = "days" required>
+                            <option value = "">Deň</option>
+                            <option value = ""><p>
+                                <script> var currentDate = new Date()
+                                    var day = currentDate.getDate()
+                                    var month = currentDate.getMonth() + 1
+                                    var year = currentDate.getFullYear()
+                                    document.write("<b>" + day + "/" + month + "/" + year + "</b>") </script>
+                                </p></option>
+                            <option value = ""><p>
+                                <script>var currentDate = new Date(new Date().getTime() + 24 * 60 * 60 * 1000);
+                                    var day = currentDate.getDate()
+                                    var month = currentDate.getMonth() + 1
+                                    var year = currentDate.getFullYear()
+                                    document.write("<b>" + day + "/" + month + "/" + year + "</b>")</script>
+                                </p></option>
+                            <option value = ""><p>
+                                <script> var currentDate = new Date(new Date().getTime() + 48 * 60 * 60 * 1000);
+                                    var day = currentDate.getDate()
+                                    var month = currentDate.getMonth() + 1
+                                    var year = currentDate.getFullYear()
+                                    document.write("<b>" + day + "/" + month + "/" + year + "</b>")</script>
+                                </p></option>
+                            <option value = ""><p>
+                                <script> var currentDate = new Date(new Date().getTime() + 72 * 60 * 60 * 1000);
+                                    var day = currentDate.getDate()
+                                    var month = currentDate.getMonth() + 1
+                                    var year = currentDate.getFullYear()
+                                    document.write("<b>" + day + "/" + month + "/" + year + "</b>") </script>
+                                </p></option>
+                            <option value = ""><p>
+                                <script> var currentDate = new Date(new Date().getTime() + 96 * 60 * 60 * 1000);
+                                    var day = currentDate.getDate()
+                                    var month = currentDate.getMonth() + 1
+                                    var year = currentDate.getFullYear()
+                                    document.write("<b>" + day + "/" + month + "/" + year + "</b>")</script>
+                                </p></option>
+                            <option value = ""><p>
+                                <script> var currentDate = new Date(new Date().getTime() + 120 * 60 * 60 * 1000);
+                                    var day = currentDate.getDate()
+                                    var month = currentDate.getMonth() + 1
+                                    var year = currentDate.getFullYear()
+                                    document.write("<b>" + day + "/" + month + "/" + year + "</b>") </script>
+                                </p></option>
+                            <option value = ""><p>
+                                <script> var currentDate = new Date(new Date().getTime() + 144 * 60 * 60 * 1000);
+                                    var day = currentDate.getDate()
+                                    var month = currentDate.getMonth() + 1
+                                    var year = currentDate.getFullYear()
+                                    document.write("<b>" + day + "/" + month + "/" + year + "</b>") </script>
+                                </p></option>
                         </select>
 
-                        <select name = "hours">
-                            <option value = "hour-select">Čas</option>
-                            <option value = "10">10:00</option>
-                            <option value = "10">12:00</option>
-                            <option value = "10">14:00</option>
-                            <option value = "10">16:00</option>
-                            <option value = "10">18:00</option>
-                            <option value = "10">20:00</option>
-                            <option value = "10">22:00</option>
+                        <select name = "hours" required>
+                            <option value = "">Čas</option>
+                            <option value = "">10:00</option>
+                            <option value = "">12:00</option>
+                            <option value = "">14:00</option>
+                            <option value = "">16:00</option>
+                            <option value = "">18:00</option>
+                            <option value = "">20:00</option>
+                            <option value = "">22:00</option>
                         </select>
                     </div>
 
                     <div class = "form-row">
-                        <input type = "text" placeholder="Meno, Priezvisko">
-                        <input type = "text" placeholder="Tel. číslo">
+                        <input type = "text" placeholder="Meno, Priezvisko" required>
+                        <input type = "tel" placeholder="Tel. číslo" required>
                     </div>
 
                     <div class = "form-row">
-                        <input type = "number" placeholder="Koľko ľudí ?" min = "1">
-                        <input type = "submit" value = "Rezervuj">
+                        <input type = "number" placeholder="Koľko ľudí ?" min = "1" required>
+                        <input type = "submit" formaction="rezervaciahot.html" value = "Rezervuj">
                     </div>
                 </form>
             </div>
@@ -90,14 +132,17 @@
         <i class="fa fa-twitter"></i>
     </div>
 
-<script>
-    var show = document.getElementById("nav-links");
-    function showMenu(){
-        show.style.right = "0";
-        }
-    function closeMenu(){
-        show.style.right = "-200px";
-        }
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      var show = document.getElementById("nav-links");
+        function showMenu(){
+            show.style.right = "0";
+            }
+        function closeMenu(){
+            show.style.right = "-200px";
+            }
+    
+            $("#stred").delay(350).animate({"opacity": "1"}, 2500);
+    </script>
 </body>
 </html>

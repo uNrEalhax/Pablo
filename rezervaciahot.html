@@ -1,0 +1,58 @@
+<html> 
+<head> 
+<title> BURGERSHOT </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="hero" id="hero">
+
+    <div class="nav-bar">
+
+        <div class="nav-logo">
+            <img src="logo.png">
+        </div>
+        <center>
+        <div class="rezerv" id="stred">
+            <h1>Rezervácia prebehla úspešne!<br><span>Nezabudnite dojsť na čas:)</span></h1>
+            <a href="index.html"><button type="button" class="btnuwu">DOMOV</button> </a>
+        </center>
+        </div>
+        </div>
+        </div>
+
+        
+
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    var show = document.getElementById("nav-links");
+      function showMenu(){
+          show.style.right = "0";
+          }
+      function closeMenu(){
+          show.style.right = "-200px";
+      }
+
+      $("#stred").delay(350).animate({"opacity": "1"}, 2500);
+      $("#alert").delay(1550).animate({"opacity": "1"}, 4000);
+
+      
+  </script>
+  <script>
+    var close = document.getElementsByClassName("closebtn");
+    var i;
+    
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+      }
+    }
+    </script>
+</body>
+</html>

@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<div class="hero">
+<div class="hero" id="hero">
 
     <div class="nav-bar">
 
@@ -30,11 +30,14 @@
              <i class="fa fa-bars" onclick="showMenu()"></i>
 
     </div>
-     <div class="banner-title">
+     <div class="banner-title" id="stred">
          <h1>Kde sa dobre <span>varí</span>,<br> tam sa dobre <span>darí</span>!</h1>
          <a href="rezervacia.html"><button type="button" class="btn">REZERVUJ SA</button> </a>
      </div>
-
+     <div class="alert" id="alert">
+        <span class="closebtn">&times;</span>  
+        <strong>Nezabudni</strong> si pozrieť naše <STRONG>nové menu</STRONG>!
+      </div>
      
      <div class="vertical-bar">
         <div class="search-icon">
@@ -52,15 +55,34 @@
 
 </div>
 
+  
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     var show = document.getElementById("nav-links");
-    function showMenu(){
-        show.style.right = "0";
-        }
-    function closeMenu(){
-        show.style.right = "-200px";
-        }
-</script>
+      function showMenu(){
+          show.style.right = "0";
+          }
+      function closeMenu(){
+          show.style.right = "-200px";
+      }
+
+      $("#stred").delay(350).animate({"opacity": "1"}, 2500);
+      $("#alert").delay(1550).animate({"opacity": "1"}, 4000);
+
+      
+  </script>
+  <script>
+    var close = document.getElementsByClassName("closebtn");
+    var i;
+    
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+      }
+    }
+    </script>
 </body>
 </html>

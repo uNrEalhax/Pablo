@@ -2,11 +2,12 @@
 <head> 
 <title> BURGERSHOT - MENU </title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="stylemenu.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<div class="hero">
+
+<div class="hero" id="hero">
 
     <div class="nav-bar">
 
@@ -17,240 +18,99 @@
         <div class="nav-links" id="nav-links">
             <i class="fa fa-close" onclick="closeMenu()"></i>
             <ul>
-              <a href="index.html"><li>DOMOV</li></a>
-              <a href="menu.html"><li>MENU</li></a>
-              <a href="onas.html"><li>O NÁS</li></a>
-              <a href="galeria.html"><li>GALÉRIA</li></a>
-              <a href="kontakt.html"><li>KONTAKT</li></a>
-              <a href="rezervacia.html"><li>REZERVÁCIA</li></a>
+               <a href="index.html"><li>DOMOV</li></a>
+               <a href="menu.html"><li>MENU</li></a>
+               <a href="onas.html"><li>O NÁS</li></a>
+               <a href="galeria.html"><li>GALÉRIA</li></a>
+               <a href="kontakt.html"><li>KONTAKT</li></a>
+               <a href="rezervacia.html"><li>REZERVÁCIA</li></a>
             </ul>
 
              </div>
-             
-<div class="wrapper">
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+
+    </div>
+     <div class="banner-title" id="stred">
+
+      <div class="wrapper">
         <div class="title">
-            <h4><span>Lahodné jedlo pre dobré zdravie</span>Naše Menu</h4>
+          <h4><span>Lahodné jedlo pre dobré zdravie</span>Naše Menu</h4>
         </div>
         <div class="menu">
             <div class="single-menu">
-                <img src="https://www.placehold.it/250/250" alt="">
+                <img src="royalb.png">
                 <div class="menu-content">
-                    <h4>burger <span>10€</span></h4>
-                    <p>burger popisok burger popisok burger popisok burger popisok</p>
+                    <h4>BURGERSHOT Royal Burger <p>9.50€</p></h4>
+                    <p>500g, hovädzie mäso , dvojitý syr Cheddar, chrumkavá slanina, majonéza, žemľa a BBQ omáčka Každý burger je podávaný s hranolkami, cibuľovými krúžkami, paradajkou, cibuľou, kyslou uhorkou.</p>
                 </div>
             </div>
             <div class="single-menu">
-                <img src="https://www.placehold.it/250/250" alt="">
+                <img src="kurab.png">
                 <div class="menu-content">
-                    <h4>burger <span>10€</span></h4>
-                    <p>burger popisok burger popisok burger popisok burger popisok</p>
+                    <h4>BURGERSHOT kurací Burger <p>8.00€</p></h4>
+                    <p>500g, vyprážané kuracie prsia, syr Ementál, majonéza, žemľa a Medová horčica Každý burger je podávaný s hranolkami, cibuľovými krúžkami, paradajkou, cibuľou, kyslou uhorkou.</p>
                 </div>
             </div>
             <div class="single-menu">
-                <img src="https://www.placehold.it/250/250" alt="">
+                <img src="extrab.png">
                 <div class="menu-content">
-                    <h4>burger <span>10€</span></h4>
-                    <p>burger popisok burger popisok burger popisok burger popisok</p>
+                    <h4>BURGERSHOT Extra Burger <p>9.90€</p></h4>
+                    <p>500g, hovädzie mäso, syr Cheddar, volské oko, chrumkavá slanina, majonéza, žemľa a BBQ omáčka Každý burger je podávaný s hranolkami, cibuľovými krúžkami, paradajkou, cibuľou, kyslou uhorkou.</p>
                 </div>
             </div>
             <div class="single-menu">
-                <img src="https://www.placehold.it/250/250" alt="">
+                <img src="hermelinb.png">
                 <div class="menu-content">
-                    <h4>burger <span>10€</span></h4>
-                    <p>burger popisok burger popisok burger popisok burger popisok</p>
+                    <h4>BURGERSHOT Patriot Burger <p>8.90€</p></h4>
+                    <p>500g, hovädzie mäso, hermelín, oravská slanina, majonéza, žemľa a BBQ omáčka Každý burger je podávaný s hranolkami, cibuľovými krúžkami, paradajkou, cibuľou, kyslou uhorkou.</p>
                 </div>
             </div>
             <div class="single-menu">
-                <img src="https://www.placehold.it/250/250" alt="">
+                <img src="jalapenob.png">
                 <div class="menu-content">
-                    <h4>burger <span>10€</span></h4>
-                    <p>burger popisok burger popisok burger popisok burger popisok</p>
+                    <h4>BURGERSHOT Jalapeno Burger <p>9.50€</p></h4>
+                    <p>500g, hovädzie mäso, kúsky modrého syra, jalapeňo, majonéza, žemľa a Blue cheese omáčka Každý burger je podávaný s hranolkami, cibuľovými krúžkami, paradajkou, cibuľou, kyslou uhorkou.</p>
                 </div>
             </div>
             <div class="single-menu">
-                <img src="https://www.placehold.it/250/250" alt="">
+                <img src="syrb.png">
                 <div class="menu-content">
-                    <h4>burger <span>10€</span></h4>
-                    <p>burger popisok burger popisok burger popisok burger popisok</p>
+                    <h4>BURGERSHOT Hermelín burger <p>9.00€</p></h4>
+                    <p>500g, grilované kuracie prsia, syr Hermelín, cibuľový džem, majonéza, žemľa a Ranch omáčka Každý burger je podávaný s hranolkami, cibuľovými krúžkami, paradajkou, cibuľou, kyslou uhorkou.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="vertical-bar">
-      <div class="search-icon">
-      </div>
-      <div class="social-icons">
-          <i class="fa fa-facebook"></i>
-          <i class="fa fa-instagram"></i>
-          <i class="fa fa-twitter"></i>
-      </div>
+     </div>
+
+     
+     <div class="vertical-bar">
+        <div class="search-icon">
+        </div>
+        <div class="social-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+        </div>
+
+
+     </div>
+
+     
+
 </div>
-  </body>
-<style>
-*{
-    margin:0;
-    padding:0;
-}
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  var show = document.getElementById("nav-links");
+    function showMenu(){
+        show.style.right = "0";
+        }
+    function closeMenu(){
+        show.style.right = "-200px";
+        }
 
-.nav-bar {
-    display: flex;
-    padding: 40px 120px;
-}
-
-.nav-logo img{
-    width: 135px;
-
-}
-
-.nav-links {flex: 1;}
-.nav-links ul {margin-left: 100px;}
-.nav-links ul li{ list-style: none; display:inline-block; padding: 8px 25px;}
-
-.nav-links ul a{ color: white; text-decoration: none; font-size: 18px;}
-.nav-links ul li::after{
-    content: "";
-    width: 0;
-    height: 2px;
-    background: yellow;
-    display: block;
-    margin: auto;
-    transition: .5s;
-}
-.nav-links ul li:hover::after{ width: 100%;}
-.nav-bar .fa {
-    display: none;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-body{
-    font-family: 'Poppins', sans-serif; background-color: black;
-}
-.hero{
-    height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(background.jpg);
-    background-position: center;
-    background-size: cover;
-    overflow-x: hidden;
-    position: relative;
-    }
-
-.vertical-bar {
-height: 100%;
-background: #000000;
-top: 0;
-left: 0;
-position: fixed;
-
-}
-
-.search-icon {
-    height: 60%;
-    width: 80px;
-}
-
-.search-icon .fa{
-    margin: 45px 23px;
-    display: block;
-    color: white;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.social-icons {
-    height: 35%;
-    width: 80px;
-    background: yellow;
-    text-align: center;
-    padding-top: 27%;
-    bottom: 0;
-    position: absolute;
-}
-
-.social-icons .fa {
-    margin: 15px 23px;
-    display: block;
-    padding: 8px;
-    border: 1px solid #000;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.wrapper{
-  margin:200px 20px;
-}
-.title{
-  text-align:center;
-  margin-bottom:60px;
-}
-.title h4{
-  text-transform:capitalize;
-  font-size:36px;
-  position:relative;
-  display:inline-block;
-  padding-bottom:10px;
-  color: white;
-}
-.title h4 span{
-  display:block;
-  font-size:18px;
-  font-style:italic;
-  margin-bottom:10px;
-}
-.title h4:before{
-  position:absolute;
-  content:"";
-  width:100px;
-  height:2px;
-  background-color:yellow;
-  bottom:0;
-  left:50%;
-  transform:translateX(-50%);
-}
-.menu{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-}
-.single-menu{
-  flex-basis:580px;
-  margin-bottom:40px;
-  padding-bottom:40px;
-  border-bottom:1px solid yellow;
-}
-.single-menu:nth-child(5), .single-menu:nth-child(6){
-  border-bottom:0;
-}
-.single-menu{
-  display:flex;
-  flex-direction:row;
-  align-items:center;
-}
-.single-menu:hover img{
-  border-radius:0;
-}
-.single-menu img{
-  max-width:180px;
-  margin-right:30px;
-  border-radius:50%;
-  border:1px solid yellow;
-  padding:3px;
-  transition:.5s;
-}
-.single-menu h4{
-  text-transform:capitalize;
-  font-size:22px;
-  border-bottom:1px dashed yellow;
-  margin-bottom:5px;
-  padding-bottom:5px;
-  color: white;
-}
-.single-menu h4 span{
-  float:right;
-  color:yellow;
-  font-style:italic;
-}
-.menu-content p {
-color: white;
-}
-</style>
+        $("#stred").delay(350).animate({"opacity": "1"}, 2500);
+</script>
+</body>
+</html>
