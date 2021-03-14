@@ -39,81 +39,76 @@ position: relative;
 }
 .nav-links ul li:hover::after{ width: 100%;}
 
-.btn {
-    border-radius: 1px;
-    padding: 15px 25px;
-    border: 0;
-    background: yellow;
-    font-weight: bold;
-    cursor: pointer;
-}
 
-.btnuwu {
-    border-radius: 3px;
-    padding: 15px 25px;
-    border: 0;
-    background: yellow;
-    font-weight: bold;
-    cursor: pointer;
-    font-size: 15px;
-}
 
 .nav-links .btn {
     float: right;
 }
 
-.banner-title {
-    opacity: 0;
-    margin: 80px 220px;
-    color: white;
+
+.-fx-image-gal {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	justify-content: center;
+}
+.-fx-image-gal p{
+color: white;
+text-align: center;
+font-size: 17px;
 }
 
-.banner-title h1{
-    font-size: 64px;
-    margin-bottom: 30px;
+.-fx-gal-item {
+	width: 100%;
+	margin: 0px;
+	padding: 20px;
+	overflow: hidden;
 }
 
-.banner-title h1 span {color: yellow;}
-
-
-.rezerv {
-    position: fixed;
-    top: 42%;
-    left: 50%;
-    margin-left: -310px;       
-    margin-top: -50px;      
-    text-align: center;
-    opacity: 0;
-    color: white;
+.-fx-gal-item a {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: white;
 }
 
-.rezerv h1{
-    font-size: 44px;
-    margin-bottom: 30px;
+.-fx-gal-image-thumb img {
+	width: 100%;
+	cursor: pointer;
+	transform: scale(1);
+	transition: all 0.5s ease;
 }
 
-.rezerv h1 span {color: yellow;}
-
-
-.onas {
-    position: fixed;
-    top: 42%;
-    left: 50%;
-    margin-left: -500px;       
-    margin-top: -50px;      
-    text-align: center;
-    opacity: 0;
-    color: white;
+.-fx-gal-image-thumb:hover img {
+	cursor: pointer;
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	filter: grayscale(0%);
+	transform: scale(1.1);
+	transition: all 0.5s ease;
+}
+@media (min-width: 420px) {
+	.-fx-image-gal {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.-fx-gal-item {
+		width: 50%;
+	}
+}
+@media (min-width: 768px) {
+	.-fx-gal-item {
+		width: 33.33%;
+	}
 }
 
-.onas h1{
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-.onas h1 span {color:yellow}
 
 
+ 
 
 .vertical-bar {
 height: 100%;
@@ -171,32 +166,102 @@ position: fixed;
     display: none;
 }
 
-.alert {
-    border-radius: 15px;
+.-fx-image-gal {
     opacity: 0;
-    width: 13%;
-    padding: 30px;
-    background-color: yellow;
-    color: black;
-    position: absolute;
-    right:5%;
-    bottom: 5%;
-    transition: opacity 0.6s;
-  }
-  .closebtn {
-    margin-top: 1px;
-    margin-left: 20px;
-    color: black;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
+}
+
+#myImg {
+    border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
   }
-  .closebtn:hover {
-    color: white;
+  
+  #myImg:hover {opacity: 0.9;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 992px){
+    .modal-content {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
 
   
 @media (max-width: 992px){
@@ -223,16 +288,6 @@ position: fixed;
     }
     .rezerv h1{
         font-size: 20px;
-        margin-bottom: 30px;
-    }
-
-    .onas {
-        position: fixed;
-        margin-left: -150px;
-        width: 300px;       
-    }
-    .onas h1{
-        font-size: 18px;
         margin-bottom: 30px;
     }
     .nav-bar{

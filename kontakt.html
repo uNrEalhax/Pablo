@@ -1,0 +1,119 @@
+<html> 
+<head> 
+<title> BURGERSHOT - KONTAKT </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylekontakt.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<div class="hero">
+    
+
+    <div class="nav-bar">
+
+        <div class="nav-logo">
+            <img src="logo.png">
+        </div>
+
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-close" onclick="closeMenu()"></i>
+            <ul>
+               <a href="index.html"><li>DOMOV</li></a>
+               <a href="menu.html"><li>MENU</li></a>
+               <a href="onas.html"><li>O NÁS</li></a>
+               <a href="galeria.html"><li>GALÉRIA</li></a>
+               <a href="kontakt.html"><li>KONTAKT</li></a>
+               <a href="rezervacia.html"><li>REZERVÁCIA</li></a>
+            </ul>
+
+             </div>
+             <i class="fa fa-bars" onclick="showMenu()"></i>
+     </div>      
+        
+            
+ <div class="stred" id="stred">
+<p class="otv">Otváracie hodiny</p><div class="dotd"> </div><br>
+
+     <table>
+        <tr>
+          <td>Pondelok 10:00 - 22:00</td>
+        </tr>
+        <tr>
+          <td>Utorok 10:00 - 22:00</td>
+        </tr>
+        <tr>
+          <td>Streda 10:00 - 22:00</td>
+        </tr>
+        <tr>
+          <td>Štvrtok 10:00 - 22:00</td>
+        </tr>
+        <tr>
+          <td>Piatok 10:00 - 22:00</td>
+        </tr>
+        <tr>
+            <td>Sobota 10:00 - 22:00</td>
+          </tr>
+          <tr>
+            <td>Nedeľa 12:00 - 22:00</td>
+          </tr>
+      </table>
+      <br><br>
+      <p class="otv">Kontaktné údaje</p>
+      <div class="dotd"> </div>
+      <br>
+      <p class="ktn">+421 904 987 321<br>support@burgershot.com<br>Nevädzová 2, Bratislava</p>
+    </div>
+
+    <div class="container" id="stred1">
+        <h3>Kontaktujte nás pomocou formuláru</h3><br>
+    <form action="kontakthot.html" target="_blank">
+
+      <label for="fname"></label>
+      <input type="text" id="fname" name="Meno" placeholder="Meno" required>
+
+      <label for="lname"></label>
+      <input type="text" id="lname" name="E-mail" placeholder="E-mail" required>
+
+      <label for="subject"></label>
+      <textarea id="subject" name="subject" placeholder="Správa" style="height:200px"></textarea>
+
+      <input type="submit" value="Odoslať">
+
+    </form>
+
+    
+  </div>
+<div class="map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1330.9112831380944!2d17.15757096478573!3d48.15222586856422!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476c892af4d29df1%3A0x43ff585fcf596fe4!2sNev%C3%A4dzov%C3%A1%202%2C%20821%2001%20Bratislava!5e0!3m2!1sen!2ssk!4v1615758970563!5m2!1sen!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <br><br><br><br>
+</div>
+     </div>
+
+              
+
+<div class="vertical-bar">
+    <div class="search-icon">
+    </div>
+    <div class="social-icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      var show = document.getElementById("nav-links");
+        function showMenu(){
+            show.style.right = "0";
+            }
+        function closeMenu(){
+            show.style.right = "-200px";
+            }
+    
+            $("#stred").delay(350).animate({"opacity": "1"}, 1500);
+            $("#stred1").delay(350).animate({"opacity": "1"}, 1500);
+
+    </script>
+</body>
+</html>

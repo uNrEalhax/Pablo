@@ -94,27 +94,6 @@ position: relative;
 
 .rezerv h1 span {color: yellow;}
 
-
-.onas {
-    position: fixed;
-    top: 42%;
-    left: 50%;
-    margin-left: -500px;       
-    margin-top: -50px;      
-    text-align: center;
-    opacity: 0;
-    color: white;
-}
-
-.onas h1{
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-.onas h1 span {color:yellow}
-
-
-
 .vertical-bar {
 height: 100%;
 background: #000000;
@@ -198,6 +177,103 @@ position: fixed;
     color: white;
   }
 
+.dotd {
+    margin-top: 10px;
+    margin-left: 31px;
+    height: 2px;
+    width: 150px;
+    background-color:yellow ;
+}
+
+  .otv {
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      margin-left: -35px;
+  }
+
+  .stred{
+    opacity: 0;
+    width: 250px;
+    position:absolute;
+    left:50%;
+    top:20%;
+    margin-top:-50px;
+    margin-left:-105px;
+  }
+
+  .ktn { color: white;
+font-size:20px;
+margin-left: -36px;
+text-align: center;}
+
+  
+table {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid white; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical ;
+    background-color: black;
+    color: white
+
+  }
+
+  input[type=submit] {
+    border-radius: 3px;
+    background-color:black ;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+
+
+  input[type=submit]:hover {
+    background-color:  black;
+  }
+
+
+  .container {
+      opacity: 0;
+    border-radius: 5px;
+    background-color: yellow;
+    padding: 40px;
+    position: absolute;
+    color:black;
+    margin-left: -315px;
+    width: 550px;
+    top: 63%;
+    left: 50%;
+  }
+  .container h3 { 
+      text-align: center;;
+      color:black;
+      font-size: 23px;
+  }
+  .container p {
+      text-align: center;
+      padding-bottom: 5%;
+  }
+
+.map {
+        position: absolute;
+        margin-left: -300px;
+        width: 550px;
+        top: 120%;
+        left: 50%;
+}
+
+
   
 @media (max-width: 992px){
     .vertical-bar{
@@ -210,6 +286,25 @@ position: fixed;
     .banner-title h1{
         font-size: 30px;
     }
+
+    .container {
+      padding: 20px;
+      margin-left: -125px;
+      width: 200px;
+      top: 80%;
+      left: 50%;
+    }
+
+    .map {
+        margin-left: -130px;
+        width: 100px;
+        top: 165%;
+        left: 50%;
+}
+iframe {
+    width: 250px;
+}
+
     .noti {
         width: 100%;
         right: 0;
@@ -223,16 +318,6 @@ position: fixed;
     }
     .rezerv h1{
         font-size: 20px;
-        margin-bottom: 30px;
-    }
-
-    .onas {
-        position: fixed;
-        margin-left: -150px;
-        width: 300px;       
-    }
-    .onas h1{
-        font-size: 18px;
         margin-bottom: 30px;
     }
     .nav-bar{
@@ -269,4 +354,16 @@ position: fixed;
         margin-left: 25px;
         margin-top: 10px;
     }
+}
+
+
+
+@media (max-height: 900px){
+    .map {
+        top: 130%;}
+}
+
+@media (max-height: 800px){
+    .map {
+        top: 160%;}
 }
